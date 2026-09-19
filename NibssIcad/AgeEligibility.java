@@ -8,10 +8,10 @@ public class AgeEligibility {
     public void ageCheck(){
         //this.age = age;
         System.out.println("Enter Age to confirm Eligibility: ");
-        age = input.nextInt("Try Again when you clock 18years!");
+        age = input.nextInt();
         if (age < 18){
             System.out.println("INELIGIBLE! \n Age: " + age);
-            System.out.println("
+            System.out.println("Try Again when you clock 18years!")
         }else {
             System.out.println("ELIGIBLE \n Age: " + age);
             System.out.println("Congratulations");
