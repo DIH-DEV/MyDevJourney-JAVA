@@ -31,7 +31,7 @@ public class BankAccount {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        BankAccount account = new BankAccount(5000);
+        BankAccount account = new BankAccount(14000);
 //        Runnable withdrawal = () -> {
 //            for (int i = 0; i < 4; i++) {
 //                account.withdrawal(850);
@@ -41,8 +41,8 @@ public class BankAccount {
         Runnable withdrawal = new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i <= 3; i++) {
-                    account.withdrawal(500);
+                for (int i = 0; i <= 5; i++) {
+                    account.withdrawal(1500);
                 }
             }
         };
