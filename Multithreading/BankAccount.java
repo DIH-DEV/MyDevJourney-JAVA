@@ -32,20 +32,13 @@ public class BankAccount {
         Scanner input = new Scanner(System.in);
 
         BankAccount account = new BankAccount(14000);
-//        Runnable withdrawal = () -> {
-//            for (int i = 0; i < 4; i++) {
-//                account.withdrawal(850);
-//            }
-//            System.out.println("--------------");
-//        };
-        Runnable withdrawal = new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i <= 5; i++) {
-                    account.withdrawal(1500);
-                }
-            }
-        };
+       Runnable withdrawal = () -> {
+           for (int i = 0; i < 4; i++) {
+               account.withdrawal(850);
+           }
+           System.out.println("--------------");
+       };
+    
 
         System.out.println("Enter your Name: ");
         String director1 = input.nextLine();
