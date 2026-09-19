@@ -13,6 +13,7 @@ public class AgeEligibility {
             System.out.println("INELIGIBLE! \n Age: " + age);
         }else {
             System.out.println("ELIGIBLE \n Age: " + age);
+            System.out.println("Try Again when you clock 18years!");
         }
     }
     public static void main(String[] args) {
